@@ -1,0 +1,194 @@
+.popular-foods{
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../assets/popular_bg.png");
+    overflow: hidden;
+}
+
+.popular-foods__title{
+    font-size: 30px;
+    font-family: var(--playfair-display);
+    color: var(--color-white);
+    padding-bottom: 4%;
+}
+
+.popular-foods__filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.popular-foods__filters-btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    font-size: 15px;
+    color: var(--color-white);
+    align-items: center;
+
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    font-family: var(--plus-jakarta-sans);
+    cursor: pointer;
+}
+
+.popular-foods__filters-btn img{
+    width: 30%;
+    object-fit: contain;
+}
+
+.popular-foods__filters-btn.active{
+    background: var(--color-white);
+    color: var(--color-black-200);
+}
+
+.popular-foods__filters-btn:hover{
+    background: var(--color-white);
+    color: var(--color-black-200);
+}
+
+.popular-foods__explore{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 36px;
+}
+
+.popular-foods__catalogue{
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    flex-wrap: wrap;
+}
+
+.popular-foods__explore-btn{
+    margin-top: 25px;
+    background-color: var(--black-200);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.popular-foods__explore-btn p{
+    line-height: 50px;
+    padding: 0 15px;
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.popular-foods__explore-btn img{
+    width: 15%;
+    object-fit: contain;
+}
+
+.popular-foods__card{
+    padding: 38px;
+    min-width: 260px;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(256, 256, 256, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: flex;
+}
+
+.popular-foods__card-image{
+    width: 40%;
+    height: 60px;
+    object-fit: contain;
+}
+
+.popular-foods__card-title{
+    margin-top: 47px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--playfair-display);
+    color: var(--color-white);
+}
+
+.popular-foods__card-details{
+    width: 100%;
+    margin-top: 32px;
+}
+
+.popular-foods__card-rating{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.popular-foods__card-rating img{
+    width: 24px;
+    object-fit: contain;
+}
+
+.popular-foods__card-rating p{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--color-white);
+}
+
+.popular-foods__card-price{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--color-white);
+}
+
+.popular-foods__card.active-card{
+    background-color: var(--color-white);
+    min-width: 35%;
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-image{
+    height: 120px;
+    background-color: var(--color-white);
+    min-width: 60%;
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-title{
+    color: var(--color-black-200);
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-rating img{
+    width: 30px;
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-rating p{
+    font-size: 24px;
+    color: var(--color-black-200);
+}
+
+.popular-foods__card.active-card 
+.popular-foods__card-price{
+    font-size: 24px;
+    color: var(--color-black-200);
+}

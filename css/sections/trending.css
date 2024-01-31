@@ -1,0 +1,135 @@
+.trending{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.trending__discover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-200);
+    color: var(--color-white);
+    font-family: var(--plus-jakarta-sans);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 100%;
+    text-transform: uppercase;
+}
+
+.trending-sushi, .trending-drink{
+    position: relative;
+    flex: 1;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    flex-direction: row;
+}
+
+.trending__content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 64px;
+}
+
+.trending__list{
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trending__list li{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    min-width: 210px;
+}
+
+.trending__icon{
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.trending__icon img{
+    width: 50%;
+    object-fit: contain;
+}
+
+.trending__list p{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+}
+
+.trending__image{
+    background-color: var(--color-white);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 32px 64px;
+    flex: 1;
+}
+
+.trending-sushi .trending__image{
+    background-image: url('../../assets/japanese_sushi.png');
+}
+
+.trending-drink .trending__image{
+    background-image: url('../../assets/japanese_drinks.png');
+}
+
+.trending__image img{
+    width: 40%;
+}
+
+
+.trending__arrow{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.trending__arrow img{
+    object-fit: contain;
+}
+
+.trending__arrow-left{
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+}
+
+.trending__arrow-bottom{
+    bottom: 0;
+    left: 5%;
+    transform: translateY(50%);
+}
+
+.trending__arrow-top{
+    top: 0;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.trending__arrow-right{
+    right: 50%;
+    bottom: 12%;
+    transform: translateX(50%);
+}
